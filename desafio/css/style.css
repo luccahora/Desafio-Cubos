@@ -1,0 +1,140 @@
+/* Cabeçalho */
+.cabecalho{
+    font-size: 40px;
+    padding: 15px 0;
+    text-align: center;
+    background: var(--azul-escuro);
+    color: var(--azul-aqua);
+}
+
+/* Buscar filme */
+.pesquisar-filme{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.pesquisar-filme input{
+    font-family: 'Abel', sans-serif;
+    font-size: 15px;
+    border-radius: 20px;
+    width: 800px;
+    height: 38px;
+    border: 1px solid var(--branco);
+    background: var(--cinza-escuro);
+    padding: 0 35px 0 35px;
+    margin: 30px;
+}
+
+::placeholder {
+    color: var(--azul-escuro);
+}
+
+/* Lista de filmes */
+.infomacoes-filme{
+    background-color :var(--cinza-escuro);
+    padding-left: 25px;
+}
+
+.lista-filmes{
+    width: 830px;
+    display: flex;
+    flex-direction: row;
+    height: 270px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.lista-filmes img{
+    height: 270px;
+    width: 175px;
+}
+
+.informacoes-filme{
+    width: 100%;
+    height: 330px;
+    padding-left: 14px;
+}
+
+.nome-filme{
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--azul-escuro);
+    height: 54px;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(107, 106, 106, 0.25);
+}
+
+.nome-filme h2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px 0 20px 93px;
+    font-family: 'Abel', sans-serif;
+    color: var(--azul-aqua);
+    font-size: 33px;
+    font-weight: lighter;
+}
+
+.descricao-filme{
+    flex-wrap: wrap;
+}
+
+.porcentagem-filme{
+    display: flex;
+    align-items: center;
+    background: var(--azul-escuro);
+    border: 4px solid var(--azul-aqua);
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    margin-top: -30px;
+    box-shadow: 0px 0px 0px 3px var(--azul-escuro);
+}
+
+.porcentagem-filme p {
+    font-family: "Abel", sans-serif;
+    display: flex;
+    margin: 0 auto;
+    color: var(--azul-aqua);
+    font-size: 20px;
+}
+
+.data-filme{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.data-filme p {
+    color: #a5a1a1;
+    font-family: "Lato", sans-serif;
+    margin: -35px 0 0 69px;
+    font-weight: 100;
+}
+
+.sinopse-filme{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Lato', sans-serif;
+    font-size: 14.5px;
+    line-height: 18.5px;
+    color: #6e6a6a;
+    padding-right: 12.9px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.genero-filme{
+    display: flex;
+}
+
+.genero span{
+    background: whitesmoke;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--azul-escuro);
+    padding: 5px 11px;
+    margin-right: 6px;
+    border: 1px solid var(--azul-escuro);;
+    border-radius: 20px;
+}

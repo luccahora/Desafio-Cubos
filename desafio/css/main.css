@@ -1,0 +1,15 @@
+:root {
+    --azul-aqua: #48eff8;
+    --azul-escuro: #116193;
+    --branco: white;
+    --cinza-escuro: #ebebeb;
+}
+
+body{
+    /* font-family: 'Abel', sans-serif;
+    font-family: 'Lato', sans-serif; */
+    background: #fff;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-somoothing: antialiased !important;
+    font-family: 'Abel', 'Lato', Arial, Helvetica, sans-serif;
+}
