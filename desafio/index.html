@@ -18,53 +18,23 @@
     </header>
 
     <section>
-        <div class="pesquisar-filme">
-            <input type="text" placeholder="Busque um filme por nome, ano ou gênero...">
-        </div>
+        <form id="searchForm">
+            <div class="pesquisar-filme">
+                <input id="inputValue" type="text" placeholder="Busque um filme por nome, ano ou gênero...">
+            </div>
+        </form>
     </section>
 
     <section>
-        <div class="lista-filmes">
-            <img src="img/thor.jpg" alt="">
-            <div class="infomacoes-filme">
+        <div id="movies">
 
-                <div class="nome-filme">
-                    <h2>Thor: Ragnarok</h2>
-                </div>
-
-                <div class="descricao-filme">
-
-                    <div class="porcentagem-filme">
-                        <p>75%</p>
-                    </div>
-
-                    <div class="data-filme">
-                        <p>25/10/2017</p>
-                    </div>
-
-                    <div class="sinopse-filme">
-                        <p>Thor está preso do outro lado do universo. Ele precisa correr
-                            contra o tempo para voltar a Asgard e parar Ragnarok, a destruição
-                            de seu mundo, que está nas mãos da poderosa e implacável vilã
-                            Hela.</p>
-                    </div>
-
-                    <div class="genero-filme">
-
-                        <div class="genero">
-                            <span>Ação</span>
-                            <span>Aventura</span>
-                            <span>Fantasia</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
         </div>
-
     </section>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 
