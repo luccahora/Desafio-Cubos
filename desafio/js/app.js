@@ -37,7 +37,7 @@ function getMovies(url, valorPesquisa) {
                 <div class="descricao-filme">
 
                     <div class="porcentagem-filme">
-                        <p>${filme.vote_average*10}%</p>
+                        <p>${filme.vote_average * 10}%</p>
                     </div>
 
                     <div class="data-filme">
@@ -51,9 +51,9 @@ function getMovies(url, valorPesquisa) {
                     <div class="genero-filme">
 
                         <div class="genero">
-                            <span>Ação</span>
-                            <span>Aventura</span>
-                            <span>Fantasia</span>
+                            <span>${filme.genre_ids[0]}</span>
+                            <span>${filme.genre_ids[1]}</span>
+                            <span>${filme.genre_ids[2]}</span>
                         </div>
 
                     </div>
