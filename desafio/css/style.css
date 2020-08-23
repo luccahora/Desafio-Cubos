@@ -7,6 +7,10 @@
     color: var(--azul-aqua);
 }
 
+.cabecalho a{
+    text-decoration: none;
+    color: var(--azul-aqua);
+}
 /* Buscar filme */
 .pesquisar-filme{
     display: flex;
@@ -175,4 +179,10 @@ footer{
     cursor: pointer;
     font-size: 25px;
     margin: 0;
+}
+
+#movies{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
 }

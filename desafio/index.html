@@ -7,6 +7,7 @@
     <title>The Movie DB</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jquery.paginate.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -14,7 +15,7 @@
 <body>
 
     <header class="cabecalho">
-        <h1>Movies</h1>
+        <h1><a href="">Movies</a></h1>
     </header>
 
     <section>
@@ -29,9 +30,10 @@
         <div id="movies"></div>
     </section>
 
-    <footer>
+    <!-- <footer>
         <div class="paginacao">
-            <span> < </span>
+            <span class="prev">
+                < </span>
         </div>
         <div class="paginacao">
             <span>1</span>
@@ -43,13 +45,14 @@
             <span>3</span>
         </div>
         <div class="paginacao">
-            <span> > </span>
+            <span class="next"> > </span>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.paginate.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/paginacao.js"></script>
 
 </body>
 

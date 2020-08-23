@@ -61,52 +61,18 @@ function getMovies(url, valorPesquisa) {
                 </div>
 
             </div>
-        </div>
+            </div>
 
             `;
             });
+
             $('#movies').html(output);
-            paginacao()
+
+
+            $('#movies').paginate({ 'perPage': 5 });
+            $('#movies').paginate({ 'scope': $('div') });
+
         })
 
-
-}
-
-function paginacao() {
-    const quantidadeFilme = document.querySelectorAll('.lista-filmes');
-
-    let perPage = 3;
-    const state = {
-        page: 1,
-        perPage,
-        totalPage: Math.ceil(quantidadeFilme.length / perPage)
-    }
-
-    console.log(state.totalPage);
-
-    const controls = {
-        next() {
-            state.page++
-
-            /* const lastPage = state.page > state.totalPage */
-            if (state.page > state.totalPage) {
-                state.page--
-            }
-        },
-        prev() {
-            state.page--
-
-            if (state.page < 1) {
-                state.page++
-            }
-        },
-        goTo() { }
-    }
-
-    console.log(state.page);
-    controls.next()
-    console.log(state.page);
-    console.prev()
-    console.log(state.page);
 
 }
