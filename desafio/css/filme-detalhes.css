@@ -20,6 +20,10 @@
     font-size: 28px;
 }
 
+.cabecalho-filme p{
+    opacity : 0.4
+}
+
 .descricao-filme{
     display: grid;
     grid-template-columns: 3fr 1fr;
