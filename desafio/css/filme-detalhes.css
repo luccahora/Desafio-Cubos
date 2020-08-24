@@ -85,3 +85,31 @@
     font-weight: bold;
     margin-bottom: 5px;
 }
+
+.categoria-porcentagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5%;
+    max-width: 663px;
+}
+
+.porcentagem-filme-detalhes{
+    display: flex;
+    align-items: center;
+    background: var(--azul-escuro);
+    border: 5.5px solid var(--azul-aqua);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 4px var(--azul-escuro);
+    
+}
+
+.porcentagem-filme-detalhes p {
+    font-family: "Abel", sans-serif;
+    display: flex;
+    margin: 0 auto;
+    color: var(--azul-aqua);
+    font-size: 25px;
+}

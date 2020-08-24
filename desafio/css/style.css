@@ -141,7 +141,7 @@
 }
 
 .genero span{
-    background: whitesmoke;
+    background: rgb(255, 255, 255);
     font-size: 15px;
     font-weight: 600;
     color: var(--azul-escuro);
