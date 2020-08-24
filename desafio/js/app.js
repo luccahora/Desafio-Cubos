@@ -71,8 +71,14 @@ function getMovies(url, valorPesquisa) {
 
             $('#movies').paginate({ 'perPage': 5 });
             $('#movies').paginate({ 'scope': $('div') });
-
+            $('.lista-filmes').click(function() {
+                alert( "Handler for .click() called." );
+              });
+           
         })
+}
 
+function filmeSelecionado(id) {
+    sessionStorage.setItem('movieId', id);
 
 }
