@@ -123,18 +123,17 @@ function getMovie() {
 
                                 <div>
                                     <h4>Duração</h4>
-                                    <p>${filme.runtime}</p>
+                                    <p>${filme.runtime} min</p>
                                 </div>
                                
                                 <div>
                                     <h4>Orçamento</h4>
-                                    <p>${filme.budget}</p>
+                                    <p>$${(filme.budget).toLocaleString('pt-BR')}</p>
                                 </div>
 
                                 <div>
-
                                     <h4>Receita</h4>
-                                    <p>${filme.revenue}</p>
+                                    <p>$${(filme.revenue).toLocaleString('pt-BR')}</p>
                                 </div>
 
                                 <div>
