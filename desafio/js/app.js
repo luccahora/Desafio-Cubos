@@ -1,7 +1,5 @@
 /* Chave api */
-const API_key = '67afc18df6c5db74e2d72db26d2b8111'
 
-const url = 'https://api.themoviedb.org/3/search/movie?language=pt-br&sort_by=popularity&include_video=1&api_key=67afc18df6c5db74e2d72db26d2b8111'
 
 const campoPesquisa = document.querySelector('#inputValue');
 
@@ -81,7 +79,7 @@ function getMovie() {
     let output = '';
 
     let posterFilme = `https://image.tmdb.org/t/p/w220_and_h330_face/`
-    const urlFilme = `https://api.themoviedb.org/3/movie/${movieId}?api_key=67afc18df6c5db74e2d72db26d2b8111&language=pt-br`
+    const urlFilme = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_key}&language=pt-br`
 
 
     fetch(urlFilme).then(response => {
@@ -91,10 +89,10 @@ function getMovie() {
 
             output += `
                 <div class="container-filme">
-                <div class="cabecalho-filme">
-                    <h1>${filme.title}</h1>
-                    <p>${filme.release_date}</p>
-                </div>
+                    <div class="cabecalho-filme">
+                        <h1>${filme.title}</h1>
+                        <p>${filme.release_date}</p>
+                    </div>
                 <div class="descricao-filme">
                     <div class="informacoes-filme">
 
@@ -169,19 +167,19 @@ function getTrailer() {
     let movieId = sessionStorage.getItem('movieId');
     let output = '';
 
-    const urlTrailer = `https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=67afc18df6c5db74e2d72db26d2b8111&language=pt-BR`
+    const urlTrailer = `https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${API_key}&language=pt-BR`
 
     fetch(urlTrailer).then(response => {
         return response.json();
     })
         .then(trailer => {
 
-            const videos = trailer.results[0].key;
-            console.log(videos);
+            const video = trailer.results[0].key;
+            
 
             output += `
                 <div class="container-trailer">
-                    <iframe src="https://www.youtube.com/embed/${videos}" frameborder="0"></iframe>
+                    <iframe src="${urlYoutube}/${video}" frameborder="0"></iframe>
                 </div>
             `
             $('#trailer-filme').html(output);
