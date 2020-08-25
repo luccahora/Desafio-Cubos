@@ -50,8 +50,9 @@
     max-width: 830px;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    height: 270px;
+    /* height: 270px; */
     margin: 0 auto;
+    /* padding-top: 3%; */
     padding-bottom: 30px;
     cursor: pointer;
 }
@@ -135,13 +136,13 @@
     margin-left: 20px;
 }
 
-.genero-filme{
+/* .genero-filme{
     display: flex;
     max-width: 600px;
-}
+} */
 
 .genero{
-    max-width: 600px;
+    /* max-width: 600px; */
     margin-top: 20px;
 } 
 
