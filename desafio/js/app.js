@@ -1,5 +1,3 @@
-/* Chave api */
-
 
 const campoPesquisa = document.querySelector('#inputValue');
 
@@ -13,7 +11,7 @@ $(document).ready(() => {
 
 function getMovies(url, valorPesquisa) {
     let output = '';
-    let posterFilme = `https://image.tmdb.org/t/p/w220_and_h330_face/`
+    
     const novaUrl = `${url}&query="${valorPesquisa}`
     fetch(novaUrl)
         .then(res => res.json())
@@ -175,7 +173,6 @@ function getTrailer() {
         .then(trailer => {
 
             const video = trailer.results[0].key;
-            
 
             output += `
                 <div class="container-trailer">
