@@ -43,6 +43,7 @@ function getMovies(url, valorPesquisa) {
         
                         <div class="data-filme">
                             <p>${filme.release_date}</p>
+                            
                         </div>
         
                         <div class="sinopse-filme">
@@ -88,8 +89,8 @@ function getMovie() {
         return response.json();
     })
         .then(filme => {
-            
-            output +=`
+
+            output += `
                 <div class="container-filme">
                 <div class="cabecalho-filme">
                     <h1>${filme.title}</h1>
@@ -163,7 +164,29 @@ function getMovie() {
             $('#detalhe-filme').html(output);
 
         })
-
-
 }
 
+function getTrailer() {
+    let movieId = sessionStorage.getItem('movieId');
+    let output = '';
+
+    const urlTrailer = `https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=67afc18df6c5db74e2d72db26d2b8111&language=pt-BR`
+
+    fetch(urlTrailer).then(response => {
+        return response.json();
+    })
+        .then(trailer => {  
+            
+            const videos = trailer.results[0].key;
+            console.log(videos);
+            
+            output += `
+                <div class="container-trailer">
+                    <iframe src="https://www.youtube.com/embed/${videos}" frameborder="0"></iframe>
+                </div>
+            `
+            $('#trailer-filme').html(output);
+
+        })
+
+}
