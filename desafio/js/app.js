@@ -10,7 +10,6 @@ $(document).ready(() => {
         let valorPesquisa = $(campoPesquisa).val();
         getMovies(url, valorPesquisa);
         e.preventDefault();
-        /* window.location = 'filme-detalhes.html' */
     });
 });
 
@@ -175,11 +174,11 @@ function getTrailer() {
     fetch(urlTrailer).then(response => {
         return response.json();
     })
-        .then(trailer => {  
-            
+        .then(trailer => {
+
             const videos = trailer.results[0].key;
             console.log(videos);
-            
+
             output += `
                 <div class="container-trailer">
                     <iframe src="https://www.youtube.com/embed/${videos}" frameborder="0"></iframe>

@@ -79,7 +79,7 @@
 
 .informacoes-adicionais h4{
     font-size: 17px;
-    color: #116193;
+    color: var(--azul-escuro);
     font-weight: bold;
     margin-bottom: 5px;
 }
