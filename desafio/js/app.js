@@ -4,14 +4,15 @@ const campoPesquisa = document.querySelector('#inputValue');
 $(document).ready(() => {
     $('#searchForm').on('submit', (e) => {
         let valorPesquisa = $(campoPesquisa).val();
-        getMovies(url, valorPesquisa);
+        verificarcampo(valorPesquisa)
+
         e.preventDefault();
     });
 });
 
 function getMovies(url, valorPesquisa) {
     let output = '';
-    
+
     const novaUrl = `${url}&query="${valorPesquisa}`
     fetch(novaUrl)
         .then(res => res.json())
@@ -183,4 +184,12 @@ function getTrailer() {
 
         })
 
+}
+
+function verificarcampo(valorPesquisa) {
+    if (valorPesquisa == '') {
+        window.location = 'index.html';
+    } else {
+        getMovies(url, valorPesquisa);
+    }
 }

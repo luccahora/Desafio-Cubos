@@ -17,7 +17,7 @@
 
 .cabecalho-filme h1{
     margin-left: 1.5%;
-    color: #116193;
+    color: var(--azul-escuro);
     font-size: 28px;
 }
 
@@ -43,7 +43,7 @@
 
 .titulo-descricao{
     font-size: 23px;
-    color: #116193;
+    color: var(--azul-escuro);
     margin-bottom: 5px;
 }
 
