@@ -44,13 +44,12 @@
 /* Lista de filmes */
 .infomacoes-filme{
     background-color :var(--cinza-escuro);
-    padding-left: 25px;
 }
 
 .lista-filmes{
-    width: 830px;
-    display: flex;
-    flex-direction: row;
+    max-width: 830px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     height: 270px;
     margin: 0 auto;
     padding-bottom: 30px;
@@ -58,12 +57,12 @@
 }
 
 .lista-filmes img{
-    height: 270px;
-    width: 175px;
+    height: 100%;
+    width: 100%;
 }
 
 .informacoes-filme{
-    width: 100%;
+    max-width: 100%;
     height: 330px;
     padding-left: 14px;
 }
@@ -72,7 +71,8 @@
     display: flex;
     flex-wrap: wrap;
     background: var(--azul-escuro);
-    height: 54px;
+    max-height: 80px;
+    max-width: 700px;
     box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(107, 106, 106, 0.25);
 }
 
@@ -87,10 +87,6 @@
     font-weight: lighter;
 }
 
-.descricao-filme{
-    flex-wrap: wrap;
-}
-
 .porcentagem-filme{
     display: flex;
     align-items: center;
@@ -100,6 +96,7 @@
     height: 58px;
     border-radius: 50%;
     margin-top: -30px;
+    margin-left: 20px;
     box-shadow: 0px 0px 0px 3px var(--azul-escuro);
 }
 
@@ -115,6 +112,7 @@
     display: flex;
     justify-content: flex-start;
     padding: 10px;
+    margin-left: 20px;
 }
 
 .data-filme p {
@@ -134,11 +132,18 @@
     padding-right: 12.9px;
     margin-bottom: 30px;
     font-weight: 600;
+    margin-left: 20px;
 }
 
 .genero-filme{
     display: flex;
+    max-width: 600px;
 }
+
+.genero{
+    max-width: 600px;
+    margin-top: 20px;
+} 
 
 .genero span{
     background: rgb(255, 255, 255);
@@ -146,6 +151,7 @@
     font-weight: 600;
     color: var(--azul-escuro);
     padding: 5px 11px;
+    margin-top: 30px;
     margin-right: 6px;
     border: 1px solid var(--azul-escuro);;
     border-radius: 20px;
@@ -159,7 +165,7 @@ footer{
     width: 250px;
     height: 50px;
 }
-
+        
 .paginacao{
     display: flex;
     justify-content: center;

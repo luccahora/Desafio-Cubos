@@ -26,41 +26,38 @@ function getMovies(url, valorPesquisa) {
 
             $.each(filmes, (index, filme) => {
                 output += `
+
                 <div class="lista-filmes" onclick="movieSelected('${filme.id}')">
-            <img src="${posterFilme}${filme.poster_path}" alt="">
-            <div class="infomacoes-filme">
-
-                <div class="nome-filme">
-                    <h2>${filme.title}</h2>
-                </div>
-
-                <div class="descricao-filme">
-
-                    <div class="porcentagem-filme">
-                        <p>${filme.vote_average * 10}%</p>
+                <img src="${posterFilme}${filme.poster_path}" alt="">
+                <div class="infomacoes-filme">
+        
+                    <div class="nome-filme">
+                        <h2>${filme.title}</h2>
                     </div>
-
-                    <div class="data-filme">
-                        <p>${filme.release_date}</p>
-                    </div>
-
-                    <div class="sinopse-filme">
-                        <p>${filme.overview}</p>
-                    </div>
-
-                    <div class="genero-filme">
-
-                        <div class="genero">
-                            <span>${filme.genre_ids[0]}</span>
-                            <span>${filme.genre_ids[1]}</span>
-                            <span>${filme.genre_ids[2]}</span>
+        
+                    <div class="descricao-filme">
+        
+                        <div class="porcentagem-filme">
+                            <p>${filme.vote_average * 10}%</p>
                         </div>
-
+        
+                        <div class="data-filme">
+                            <p>${filme.release_date}</p>
+                        </div>
+        
+                        <div class="sinopse-filme">
+                            <p>${filme.overview}</p>
+        
+                            <div class="genero">
+                                <span>${filme.genre_ids[0]}</span>
+                                <span>${filme.genre_ids[1]}</span>
+                                <span>${filme.genre_ids[2]}</span>
+                            </div>
+                        </div>
+        
                     </div>
-
+        
                 </div>
-
-            </div>
             </div>
 
             `;
