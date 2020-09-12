@@ -1,4 +1,4 @@
-<h1 align="center"> TMDD :movie_camera: </h1>
+<h1 align="center"> Get Movies :movie_camera: </h1>
  
 
 <p align="center">
