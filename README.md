@@ -7,7 +7,9 @@
 
 
 <h3> Sobre o projeto:</h3>
-<p> Para executar basta clonar o projeto e abrir o <strong>index.html</strong></p>
+
+<p>Projeto consumindo a API The Movie DB.
+ Para executar basta clonar o projeto e abrir o <strong>index.html</strong></p>
 
 :computer: Stack
 ------------
